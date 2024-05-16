@@ -1,9 +1,17 @@
 [[redirects]]
-  from = 'https://www.linkedin.com/in/ravine-derick'
-  to = 'https://www.linkedin.com/in/ravine-derick'
+  from = "/api/*"
+  to = "https://opentableweb.onrender.com/:splat"
+  status = 200
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
+[[redirects]]
+  from = "https://www.linkedin.com/in/ravine-derick"
+  to = "https://www.linkedin.com/in/ravine-derick"
   status = 200
   force = false
   query = {path = ":path"}
   conditions = {Language = ["en"], Country = ["US"], Role = ["admin"]}
-
-
