@@ -169,6 +169,14 @@ section {
   margin: auto 0;
 }
 
+.section__pic-container img {
+  width: 100%; /* Image takes full width of its container */
+  height: auto; /* Maintain aspect ratio */
+  object-fit: contain; /* Cover the container without stretching the image */
+  border-radius: 50%; /* Rounded corners for a circular image */
+}
+
+
 .section__text p{
   font-weight: 600;
 }
@@ -268,7 +276,7 @@ section {
 }
 
 .about-pic {
-  border-radius: 2rem;
+  border-radius: 10rem;
 }
 
 .arrow {
