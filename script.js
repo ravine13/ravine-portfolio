@@ -4,3 +4,8 @@ function toggleMenu() {
     menu.classList.toggle("open");
     icons.classList.toggle("open");
 }
+
+document.addEventListener("DOMContentLoaded", function() {
+    document.body.classList.add("loaded");
+  });
+  

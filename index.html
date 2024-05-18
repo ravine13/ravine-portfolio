@@ -6,78 +6,105 @@
     <title>ravine's world</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="media.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 <body>
-    <nav id="desktop-nav">
-        <div class="logo"> Derick kuria</div>
-        <div>
-            <ul class="nav-links">
-                <li><a href="about">About</a></li>
-                <li><a href="experience">Experience</a></li>
-                <li><a href="projects">Projects</a></li>
-                <li><a href="contact">Contact</a></li>
-            </ul>
+      <div class="preloader">
+        <div class="loader-container">
+            <svg viewBox="0 0 400 160">
+                <text x="50%" y= "50" dy=".32em" text-anchor="middle" class="text-body">
+                  DERICK
+                </text>
+                <text x="50%" y= "50" dy=".32em" dx="2.1em" text-anchor="middle" class="text-body">
+                  .
+                </text>
+            </svg>
         </div>
+    </div>
+    <nav id="desktop-nav" class="desktop-nav">
+      <div class="logo">Derick Kuria</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
     </nav>
     <nav id="hamburger-nav">
-        <div class="logo">Derick Kuria</div>
-        <div class="hamburger-menu">
-          <div class="hamburger-icon" onclick="toggleMenu()">
-            <span></span>
-            <span></span>
-            <span></span>
-          </div>
-          <div class="menu-links">
-            <li><a href="#about" onclick="toggleMenu()">About</a></li>
-            <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-            <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-            <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-          </div>
+      <div class="logo">Derick Kuria</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
         </div>
-      </nav>
-      <section id="profile">
-        <div class="section__pic-container">
-          <img src="./assets/DERICK KURIA.png" alt="Derick kuria's profile picture" />
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
         </div>
-        <div class="section__text">
-          <p class="section__text__p1">Hello, I'm</p>
-          <h1 class="title">Derick Kuria</h1>
-          <p class="section__text__p2">Backend Developer</p>
-          <div class="btn-container">
-            <button
-              class="btn btn-color-2"
-              onclick="window.open('./assets/DERICK KURIA 1 (8).pdf')"
-            >
-              Download CV
-            </button>
-            <button class="btn btn-color-1" onclick="location.href='./#contact'">
-              Contact Info
-            </button>
-          </div>
-          <div id="socials-container">
-            <a href="https://www.linkedin.com/in/ravine-derick" target="_blank">
-                <img src="./assets/linkedin.png" alt="My LinkedIn profile" class="icon" />
-            </a>
-              
-            <a href="https://github.com/ravine13" target="_blank">
-                <img src="./assets/github.png" alt="My Github profile" class="icon" />
-            </a>
-          </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img
+          src="./assets/DERICK KURIA (1).png"
+          alt="Derick kuria's profile picture"
+        />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Derick Kuria</h1>
+        <p class="section__text__p2">Backend Developer</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/DERICK KURIA 1 (8).pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
         </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https:/www.linkedin.com/in/ravine-derick'"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https:/github.com/ravine13'"
+          />
+        </div>
+      </div>
     </section>
     <section id="About">
       <p class="section__text__p1">Get to know me</p>
       <h1 class="title">About Me</h1>
       <div class="section-container">
-        <div class="section__pic-container">
-          <img src="./assets/DERICK KURIA (1).png" alt="profile-pic" class="about-pic"/>
-        </div>
+        <img
+          src="./assets/DERICK KURIA.png"
+          alt="profile-pic"
+          class="about-pic"
+        />
         <div class="about-details-container">
           <div class="about-containers">
             <div class="details-container">
-              <img src="./assets/experience.png" alt="Experience icon" class="icon"/>
+              <img
+                src="./assets/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
               <h3>Experience</h3>
-              <p> 1 year <br />Fullstack development</p>
+              <p>1 year <br />Fullstack development</p>
             </div>
             <div class="details-container">
               <img
@@ -91,14 +118,23 @@
           </div>
           <div class="text-container">
             <p>
-              Hello! I'm a Full Stack Developer with a strong inclination towards backend development. My passion for problem-solving and creating efficient systems has led me to this exciting field. I'm proficient in various programming languages and frameworks, and I'm always eager to learn more to enhance my skills.
-
-              In addition to my full stack development experience, I'm an aspiring Data Scientist. I'm fascinated by the power of data and how it can be used to make informed decisions, predict trends, and solve complex problems. I'm currently honing my skills in that field itself.
-              
-              When I'm not on my machine coding away, I love to stay active and engage in various sports. Physical activity helps me stay focused and energized. I also cherish the time I spend with my loved ones, as these moments provide balance and happiness in my life(but not hiking)
-              
-              I believe in continuous learning and growth, and I'm always open to new challenges. I'm not just about various trends in technology and algorithms; I'm about using technology to make a positive impact. Let's connect and build something spectacular!
-              
+              Hello! I'm a Full Stack Developer with a strong inclination
+              towards backend development. My passion for problem-solving and
+              creating efficient systems has led me to this exciting field. I'm
+              proficient in various programming languages and frameworks, and
+              I'm always eager to learn more to enhance my skills. In addition
+              to my full stack development experience, I'm an aspiring Data
+              Scientist. I'm fascinated by the power of data and how it can be
+              used to make informed decisions, predict trends, and solve complex
+              problems. I'm currently honing my skills in that field itself.
+              When I'm not on my machine coding away, I love to stay active and
+              engage in various sports. Physical activity helps me stay focused
+              and energized. I also cherish the time I spend with my loved ones,
+              as these moments provide balance and happiness in my life(but not
+              hiking) I believe in continuous learning and growth, and I'm
+              always open to new challenges. I'm not just about various trends
+              in technology and algorithms; I'm about using technology to make a
+              positive impact. Let's connect and build something spectacular!
             </p>
           </div>
         </div>
@@ -207,7 +243,7 @@
                   class="icon"
                 />
                 <div>
-                  <h3>MySQL </h3>
+                  <h3>MySQL</h3>
                   <p>Intermediate</p>
                 </div>
               </article>
@@ -340,7 +376,9 @@
             alt="Email icon"
             class="icon contact-icon email-icon"
           />
-          <p><a href="mailto:kuriaderekemail@gmail.com">Kuriaderek@gmail.com</a></p>
+          <p>
+            <a href="mailto:kuriaderekemail@gmail.com">Kuriaderek@gmail.com</a>
+          </p>
         </div>
         <div class="contact-info-container">
           <img
