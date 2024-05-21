@@ -142,7 +142,7 @@ section {
 
 .section-container {
   display: flex;
-  gap: 4rem;
+  gap: 1rem;
   padding: 0 5%;
 }
 
@@ -403,12 +403,13 @@ footer .nav-links {
 
 /* SVG */ 
 .preloader {
-  position: fixed;
+  position: absolute;
   inset: 0;
   z-index: 999;
   background-color: #0c0603;
   display: grid;
   place-content: center;
+
 }
 
 .loader {
@@ -432,7 +433,7 @@ footer .nav-links {
 
 .preloader.hidden {
   opacity: 0;
-  visibility: hidden;
+  display: none;
 }
 
 #page-content {
